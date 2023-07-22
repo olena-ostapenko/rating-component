@@ -1,0 +1,129 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* FONTS */
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:rgba(255, 255, 255, 1);
+    text-align: left;
+}
+p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: rgba(150, 159, 173, 1);
+}
+
+
+html {
+
+}
+
+body {font-family: 'Overpass';
+
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 412px;
+    height: 416px;
+    background: linear-gradient(to bottom, rgba(35, 42, 52, 1) 0%, rgba(24, 30, 39, 1) 100%);
+    border-radius: 30px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* =================================== */
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: rgba(38, 46, 56, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.image {
+    width: 17px;
+    height: 16px;
+    background-image: url(./images/Star_icon.svg);
+    background-repeat: no-repeat;
+}
+/* =================================== */
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+/* =================================== */
+.list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+input[type=radio] {
+    display: none;
+}
+.list div, label {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(124, 135, 152, 1);
+  
+
+    background-color: rgba(38, 46, 56, 1);
+    border-radius: 100%;
+    cursor: pointer;
+  
+}
+
+input[type=radio]+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=radio]:checked+label {
+    color:rgba(255, 255, 255, 1);
+    background-color: rgba(124, 135, 152, 1);
+}
+input[type=radio]label:focus{
+   
+    background-color: rgba(252, 118, 20, 1);
+}
