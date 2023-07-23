@@ -102,16 +102,13 @@ input[type=radio] {
     display: flex;
     justify-content: center;
     align-items: center;
- 
     font-size: 16px;
     line-height: 24px;
     color: rgba(124, 135, 152, 1);
-  
-
     background-color: rgba(38, 46, 56, 1);
     border-radius: 100%;
+    border: 0;
     cursor: pointer;
-  
 }
 
 input[type=radio]+label {
@@ -123,7 +120,7 @@ input[type=radio]:checked+label {
     color:rgba(255, 255, 255, 1);
     background-color: rgba(124, 135, 152, 1);
 }
-input[type=radio]label:focus{
-   
-    background-color: rgba(252, 118, 20, 1);
+.list div, label:hover{
+   border: 0;
+    background-color: rgba(252, 118, 20, 1)!important;
 }
