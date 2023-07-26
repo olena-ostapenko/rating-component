@@ -17,14 +17,15 @@ p {
 }
 
 /* FONTS */
-h1{
+h1 {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     text-align: left;
 }
-p{
+
+p {
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 24px;
@@ -32,11 +33,11 @@ p{
 }
 
 
-html {
+html {}
 
-}
-
-body {font-family: 'Overpass';
+body {
+    font-family: 'Overpass';
+    background-color: rgba(19, 21, 24, 1);
 
 }
 
@@ -55,10 +56,16 @@ body {font-family: 'Overpass';
     background: linear-gradient(to bottom, rgba(35, 42, 52, 1) 0%, rgba(24, 30, 39, 1) 100%);
     border-radius: 30px;
     padding: 32px;
+
+}
+
+.how {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 /* =================================== */
 .circle {
     width: 48px;
@@ -71,32 +78,38 @@ body {font-family: 'Overpass';
     align-items: center;
 
 }
+
 .image {
     width: 17px;
     height: 16px;
     background-image: url(./images/Star_icon.svg);
     background-repeat: no-repeat;
 }
+
 /* =================================== */
-.text{
+.text {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
+    text-align: left;
 }
 
 /* =================================== */
-.list{
+.list {
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-    
     justify-content: space-between;
+    margin-bottom: 32px;
 }
+
 input[type=radio] {
     display: none;
 }
-.list div, label {
+
+label {
     width: 51px;
     height: 51px;
     display: flex;
@@ -107,7 +120,6 @@ input[type=radio] {
     color: rgba(124, 135, 152, 1);
     background-color: rgba(38, 46, 56, 1);
     border-radius: 100%;
-    border: 0;
     cursor: pointer;
 }
 
@@ -116,11 +128,156 @@ input[type=radio]+label {
     justify-content: center;
     align-items: center;
 }
+
 input[type=radio]:checked+label {
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(124, 135, 152, 1);
 }
-.list div, label:hover{
-   border: 0;
-    background-color: rgba(252, 118, 20, 1)!important;
+
+label:hover {
+    border: 0;
+    background-color: rgba(252, 118, 20, 1) !important;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: rgba(252, 118, 20, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: inherit;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    line-height: 1px;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(252, 118, 20, 1);
+    cursor: pointer;
+}
+
+/* =================================== */
+.thank {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.image-check {
+    width: 162px;
+    height: 108px;
+    background-image: url(./images/check_image.svg);
+    background-repeat: no-repeat;
+}
+
+.text-selector {
+    width: 193px;
+    height: 32px;
+    background-color: rgba(38, 46, 56, 1);
+    border-radius: 22.5px;
+    color: rgba(252, 118, 20, 1);
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-error{
+    color: rgba(252, 118, 20, 1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 40px;
+    
+
+}
+
+.text-thank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.center-text {
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 2px;
+}
+
+@media(max-width:375px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+
+    /* =================================== */
+    .content {
+        width: 100%;
+        max-width: 327px;
+        height: 360px;
+        padding: 24px;
+    }
+
+    /* =================================== */
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .image {
+        background-image: url(./images/Star_small_icon.svg);
+        background-repeat: no-repeat;
+    }
+    .list {
+        margin-bottom: 24px;
+    }
+    .text {
+        gap: 17px;
+    }
+    label {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    input[type=submit] {
+        font-size: 14px; 
+    }
+
+    /* =================================== */
+    .image-check {
+        width: 144px;
+        height: 96px;
+        background-image: url(./images/check_small_image.svg);
+        background-repeat: no-repeat;
+        margin-top: 10px;
+    }
+
+    .text-thank {
+        gap: 17px;
+
+    }
+
+    .text-selector {
+        font-size: 14px;
+    }
+
+    .thank {
+        gap: 22px;
+    }
 }

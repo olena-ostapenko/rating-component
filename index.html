@@ -12,54 +12,68 @@
 <body>
     <div class="container">
         <div class="content">
-                <div class="circle">
-                    <div class="image">
-                    </div>
+                <div  class = "how" id="how">
+                  <div class="circle">
+                      <div class="image">
+                      </div>
+                  </div>
+                  <div class="text">
+                      <h1> How did we do?</h1>
+                      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                  </div>
+                  <form>
+                      <div class="list">
+                          <div>
+                              <input type="radio" name="star" value="1" id="one" />
+                              <label for="one">
+                                1
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" name="star" value="2" id="two" />
+                              <label for="two">
+                                2
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" name="star" value="3" id="three" />
+                              <label for="three">
+                                3
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" name="star" value="4" id="fourth" />
+                              <label for="fourth">
+                                4
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" name="star" value="5" id="fifth" />
+                              <label for="fifth">
+                                5
+                              </label>
+                            </div>
+                      </div>
+                      <input type="submit" value="SUBMIT">
+                  </form>
                 </div>
-                <div class="text">
-                    <h1> How did we do?</h1>
-                    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-                </div>
-                <form>
-                    <div class="list">
-                        <div>
-                            <input type="radio" name="star" checked value="1" id="one" />
-                            <label for="one">
-                              1
-                            </label>
-                          </div>
-                          <div>
-                            <input type="radio" name="star" value="2" id="two" />
-                            <label for="two">
-                              2
-                            </label>
-                          </div>
-                          <div>
-                            <input type="radio" name="star" value="3" id="three" />
-                            <label for="three">
-                              3
-                            </label>
-                          </div>
-                          <div>
-                            <input type="radio" name="star" value="4" id="fourth" />
-                            <label for="fourth">
-                              4
-                            </label>
-                          </div>
-                          <div>
-                            <input type="radio" name="star" value="5" id="fifth" />
-                            <label for="fifth">
-                              5
-                            </label>
-                          </div>
-    
+                <div class="content-thank" id="thank" hidden >
+                  <div class="thank" >
+                    <div class="image-check"></div>
+                    <div class="text-selector">
+                      <p class="text-selector">
+                        You selected &nbsp; <span></span> &nbsp; out of 5
+                      </p>
                     </div>
-                </form>
-           
-                  
-            
-           
+                    <div class="text-thank">
+                      <h1>Thank you!</h1>
+                      <p class="center-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                    </div>
+                  </div>
+                </div>
         </div>
+        
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
